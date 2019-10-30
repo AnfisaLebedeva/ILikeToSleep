@@ -2,7 +2,6 @@ document.getElementById("form").onsubmit = function(evt){
     localStorage.clear();
     evt.preventDefault();
     console.log(evt);
-    let object = {};
     for (let i = 0; i < 7; i++) {
         object[evt.target[i].name] = evt.target[i].value;
     }
