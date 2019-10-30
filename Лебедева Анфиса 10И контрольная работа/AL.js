@@ -18,24 +18,6 @@ window.onload =function(){
         });
     }
 }
-document.getElementById("name").onkeydown = function(evt){
-    let regEx = /[A-Z]\w{3,7}/;
-    if (!regEx.test(evt.target.value)){
-        console.log(evt);
-        console.log(evt.target.validity.valid);
-        evt.target.validity.valid=false;
-        document
-        .getElementById("error")
-        .innerHTML
-    } else {
-        evt.target.validity.valid = true;
-        document
-        .getElementById("error")
-        .innerHTML=""
-        console.log(evt.target.validity.valid);
-    }
-}
-
 function mouseoverPass(obj) {
     var obj = document.getElementById('myPassword');
     obj.type = "text";
